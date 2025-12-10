@@ -1,5 +1,28 @@
-this is a text file . i had done some change
+import React from "react";
+import "./ProtocolField.scss";
 
-I am in feature branch .
-
-conflict3
+export default function ProtocolField({ label, value, onChange, onBlur ,type = "text" }) {
+  
+  return (
+    <div className="protocol-row">
+      <div className="protocol-col label">{label}</div>
+      <NotificationCard
+                    title="System update available"
+                    description="New firmware update available for download"
+                    time="1 day ago"
+                    type="information"
+                    link="/"
+                  />
+      <div className="protocol-col">
+        <input
+          type={type}
+          value={value}
+          placeholder={label}
+          onChange={(e) => onChange(e.target.value)}
+          onBlur={onBlur}
+        />
+      </div>
+      {/* <div className="protocol-arrow">→</div> */}
+    </div>
+  );
+}
