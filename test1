@@ -1,5 +1,7 @@
-this is a text file . i had done some change
-
-I am in feature branch .
-
-conflict3
+<NotificationCard
+                    title="System update available"
+                    description="New firmware update available for download"
+                    time="1 day ago"
+                    type="information"
+                    link="/"
+                  />
