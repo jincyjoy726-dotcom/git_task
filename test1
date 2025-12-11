@@ -3,5 +3,5 @@
                     description="New firmware update available for download"
                     time="1 day ago"
                     type="information"
-                    link="/",
+                    link="/"
                   />
